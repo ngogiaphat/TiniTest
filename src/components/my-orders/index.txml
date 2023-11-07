@@ -6,15 +6,7 @@
       <icon type="arrow_right" color="#1A94FF"/>
     </view>
   </view>
-
   <view class="px-medium pt-medium flex justify-around">
-    <order-icon
-      tiki:for="{{orderIcons}}"
-      isLoading="{{isLoading}}"
-      tab="{{index}}"
-      onTap="onMoveOrderManagement" 
-      value="{{numOrders[item.key]}}"
-      src="{{item.src}}" 
-      text="{{item.value}}"/>
+    <order-icon tiki:for="{{orderIcons}}" isLoading="{{isLoading}}" tab="{{index}}" onTap="onMoveOrderManagement" value="{{numOrders[item.key]}}"  src="{{item.src}}" text="{{item.value}}"/>
   </view>
 </view>

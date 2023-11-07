@@ -1,10 +1,3 @@
 <view class="{{className}}">
-  <search-bar
-    value="{{value}}"
-    placeholder="{{placeholder}}"
-    maxLength="{{100}}"
-    onTapCloseIcon="_clearSearchInput"
-    onInput="_onChangeSearchInput"
-    onTapSearchIcon="_onConfirm"
-  />
+  <search-bar value="{{value}}" placeholder="{{placeholder}}" maxLength="{{100}}" onTapCloseIcon="_clearSearchInput" onInput="_onChangeSearchInput" onTapSearchIcon="_onConfirm"/>
 </view>

@@ -1,6 +1,6 @@
 {
-  "component": true,
-  "usingComponents": {
-    "card-select": "/components/card-select/index"
-  }
+	"component": true,
+	"usingComponents": {
+		"card-select": "/components/card-select/index"
+	}
 }

@@ -1,6 +1,6 @@
 {
-  "component": true,
-  "usingComponents": {
-    "category-section": "components/category-section/index"
-  }
+	"component": true,
+	"usingComponents": {
+		"category-section": "components/category-section/index"
+	}
 }

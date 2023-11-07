@@ -1,29 +1,22 @@
 .footer {
-  position: sticky;
   bottom: 0;
   z-index: 3;
+  position: sticky;
 }
-
 .footer-prod-detail button {
   font-size: var(--font-size-medium);
 }
-
 .select-option .tu-bottom-sheet-wrapper {
-  max-height: calc(
-    var(--tf-screen-height) - var(--tf-title-bar-height) -
-      var(--tf-status-bar-height)
-  ) !important;
+  max-height: calc(var(--tf-screen-height) - var(--tf-title-bar-height) - var(--tf-status-bar-height)) !important;
 }
-
 .total-images {
-  position: absolute;
-  bottom: 12px;
   right: 12px;
+  bottom: 12px;
   padding: 6px 12px;
+  position: absolute;
   border-radius: 16px;
   background: rgba(0, 0, 0, 0.4);
 }
-
 .prod-skeleton-img {
   height: 375px;
 }

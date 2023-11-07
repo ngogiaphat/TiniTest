@@ -1,6 +1,6 @@
 {
-  "component": true,
-  "usingComponents": {
-    "product": "components/product/index"
-  }
+	"component": true,
+	"usingComponents": {
+		"product": "components/product/index"
+	}
 }

@@ -1,32 +1,30 @@
-import { getOrderDetail } from '../../services/index';
-
+import {getOrderDetail} from "../../services/index";
+// @ts-ignore
 Page({
-  data: {
-    isLoading: true,
-    order: {},
-  },
+	data: {
+		isLoading: true,
+		order: {},
+	},
+	async loadData(){
+		this.setData({
+			isLoading: true,
+		});
+		try {
+			const order = await getOrderDetail();
 
-  async loadData() {
-    this.setData({
-      isLoading: true,
-    });
-
-    try {
-      const order = await getOrderDetail();
-
-      this.setData({
-        order,
-        isLoading: false,
-      });
-    } catch (error) {
-      this.setData({
-        isLoading: false,
-      });
-    }
-  },
-
-  // Life cycle
-  onReady() {
-    this.loadData();
-  },
+			this.setData({
+				order,
+				isLoading: false,
+			});
+		}
+    catch(error){
+			this.setData({
+				isLoading: false,
+			});
+		}
+	},
+	// Life cycle
+	onReady(){
+		this.loadData();
+	},
 });

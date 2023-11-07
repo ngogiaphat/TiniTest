@@ -1,6 +1,7 @@
+// @ts-nocheck
 Component({
-  props: {
-    isLoading: true,
-    products: [],
-  },
+	props: {
+		isLoading: true,
+		products: [],
+	},
 });

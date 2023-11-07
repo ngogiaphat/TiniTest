@@ -1,11 +1,10 @@
 .category-grid-layout {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
   grid-row-gap: 28px;
+  grid-template-columns: repeat(4, 1fr);
 }
-
 .category-grid-layout .category {
+  padding: 0 8px;
   --grid-item-width: calc(100vw / 4);
   --grid-item-image-with: calc(var(--grid-item-width) - 10vw);
-  padding: 0 8px;
 }

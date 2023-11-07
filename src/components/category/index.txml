@@ -8,27 +8,13 @@
       </view>
     </view>
   </template>
-  
   <template name="completed">
-    <view
-      class="category flex flex-col items-center"
-      onTap="_onTapCategory"
-    >
-      <image
-        class="category-logo mb-2x-small"
-        src="{{category.image}}"
-      />
-      <text
-        class="category-name text-center"
-        number-of-lines="{{3}}"
-      >
+    <view class="category flex flex-col items-center" onTap="_onTapCategory">
+      <image class="category-logo mb-2x-small"  src="{{category.image}}"/>
+      <text class="category-name text-center" number-of-lines="{{3}}">
         {{category.name}}
       </text>
     </view>
   </template>
-  
-  <template
-    is="{{isLoading ? 'loading' : 'completed'}}"
-    data="{{className, category, _onTapCategory}}"
-  />
+  <template is="{{isLoading ? 'loading' : 'completed'}}" data="{{className, category, _onTapCategory}}"/>
 </view>

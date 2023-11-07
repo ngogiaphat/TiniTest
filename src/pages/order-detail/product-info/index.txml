@@ -1,5 +1,4 @@
 <import-sjs from="../../../utils/common.sjs" name="{statusFormatter, moneyFormatter}"></import-sjs>
-
 <template name="loading">
   <section title="Product info">
     <view class="flex items-center">
@@ -11,14 +10,15 @@
     </view>
   </section>
 </template>
-
 <template name="completed">
   <section title="Product info">
     <view tiki:for="{{products}}">
       <view class="flex items-center">
-        <image class="block size-40" src="{{item.thumbnail}}" />
+        <image class="block size-40" src="{{item.thumbnail}}"/>
         <view class="ml-2x-small">
-          <view class="font-bold">{{item.name}}</view>
+          <view class="font-bold">
+            {{item.name}}
+          </view>
           <view class="text-small text-gray60">
             {{moneyFormatter(item.price)}} x {{item.quantity}}
           </view>
@@ -28,7 +28,6 @@
     </view>
   </section>
 </template>
-
 <view>
-  <template is="{{isLoading ? 'loading' : 'completed'}}" data="{{products}}" />
+  <template is="{{isLoading ? 'loading' : 'completed'}}" data="{{products}}"/>
 </view>

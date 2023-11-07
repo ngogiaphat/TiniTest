@@ -1,9 +1,8 @@
 .divider {
-  height: 65px;
   width: 1px;
+  height: 65px;
   background: var(--gray20);
 }
-
 .ske-coupon-point {
   height: 96px;
 }

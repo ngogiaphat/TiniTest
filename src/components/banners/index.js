@@ -1,7 +1,8 @@
+// @ts-nocheck
 Component({
-  props: {
-    banners: [],
-    isLoading: true,
-    className: '',
-  },
+	props: {
+		banners: [],
+		isLoading: true,
+		className: "",
+	},
 });

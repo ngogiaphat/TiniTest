@@ -1,7 +1,8 @@
+// @ts-nocheck
 Component({
-  props: {
-    title: '',
-    className: '',
-    fullWidth: false,
-  },
+	props: {
+		title: "",
+		className: "",
+		fullWidth: false,
+	},
 });

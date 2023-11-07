@@ -1,5 +1,4 @@
 <import-sjs from="../../utils/common.sjs" name="{moneyFormatter}"></import-sjs>
-
 <template name="loading">
   <view class="w-full flex justify-between py-2x-small {{className}}">
     <view class="flex flex-grow">
@@ -10,27 +9,16 @@
         <view class="order-item-stepper-skeleton skeleton"/>
       </view>
     </view>
-    <view
-      class="order-item-close-btn"
-      onTap="_onClickRemoveOrder"
-    >
-      <icon
-        size="{{20}}"
-        type="close"
-        color="#808089"
-      />
+    <view class="order-item-close-btn" onTap="_onClickRemoveOrder">
+      <icon size="{{20}}" type="close" color="#808089"/>
     </view>
   </view>
 </template>
-
 <template name="completed">
   <view class="w-full flex justify-between py-2x-small {{className}}">
     <view class="flex mr-medium">
       <view onTap="_onTapProduct" class="mr-2x-small">
-        <image
-          class="order-item-thumbnail radius-8px"
-          src="{{product.thumbnail}}"
-        />
+        <image class="order-item-thumbnail radius-8px" src="{{product.thumbnail}}"/>
       </view>
       <view>
         <view onTap="_onTapProduct">
@@ -41,31 +29,12 @@
             {{moneyFormatter(product.price)}}
           </view>
         </view>
-        <stepper
-          showNumber
-          step="{{1}}"
-          min="{{1}}"
-          max="{{99}}"
-          value="{{product.quantity}}"
-          inputWidth="{{40}}"
-          onChange="_onChangeQuantityOrder"
-        />
+        <stepper showNumber step="{{1}}" min="{{1}}" max="{{99}}" value="{{product.quantity}}" inputWidth="{{40}}" onChange="_onChangeQuantityOrder"/>
       </view>
     </view>
-    <view
-      class="order-item-close-btn"
-      onTap="_onClickRemoveOrder"
-    >
-      <icon
-        size="{{20}}"
-        type="close"
-        color="#808089"
-      />
+    <view class="order-item-close-btn" onTap="_onClickRemoveOrder">
+      <icon size="{{20}}" type="close" color="#808089"/>
     </view>
   </view>
 </template>
-
-<template
-  is="{{isLoading ? 'loading' : 'completed'}}"
-  data="{{className, product}}"
-/>
+<template is="{{isLoading ? 'loading' : 'completed'}}" data="{{className, product}}"/>

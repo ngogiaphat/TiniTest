@@ -1,6 +1,7 @@
+// @ts-ignore
 Component({
-  props: {
-    isLoading: true,
-    payment: {},
-  },
+	props: {
+		isLoading: true,
+		payment: {},
+	},
 });

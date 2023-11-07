@@ -1,6 +1,6 @@
 {
-  "workbench.iconTheme": "material-icon-theme",
-  "files.associations": {
-    "*.sjs": "javascript"
-  }
+	"workbench.iconTheme": "material-icon-theme",
+	"files.associations": {
+		"*.sjs": "javascript"
+	}
 }

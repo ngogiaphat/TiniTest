@@ -1,7 +1,8 @@
+// @ts-nocheck
 Component({
-  props: {
-    title: '',
-    description: '',
-    isBorder: true
-  }
-})
+	props: {
+		title: "",
+		description: "",
+		isBorder: true,
+	},
+});

@@ -1,12 +1,12 @@
+// @ts-nocheck
 Component({
-  props: {
-    title: '',
-    onTapActionButton: () => {},
-  },
-
-  methods: {
-    _onTapActionButton() {
-      this.props.onTapActionButton();
-    },
-  },
+	props: {
+		title: "",
+		onTapActionButton: () => {},
+	},
+	methods: {
+		_onTapActionButton(){
+			this.props.onTapActionButton();
+		},
+	},
 });

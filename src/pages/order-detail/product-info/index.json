@@ -1,6 +1,6 @@
 {
-  "component": true,
-  "usingComponents": {
-    "section": "pages/cart/section/index"
-  }
+	"component": true,
+	"usingComponents": {
+		"section": "pages/cart/section/index"
+	}
 }
